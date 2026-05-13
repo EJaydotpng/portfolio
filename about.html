@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Graphic Design</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/layout.css" />
+    <style>
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--space-unit) * 4);
+        margin-top: calc(var(--space-unit) * 4);
+      }
+      .about-image {
+        aspect-ratio: 1;
+        background-color: var(--border-color);
+        overflow: hidden;
+      }
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .skills-list {
+        margin-top: calc(var(--space-unit) * 2);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-unit);
+      }
+      .skills-list li {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 0.5rem;
+      }
+      @media (max-width: 768px) {
+        .about-content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">EJAYDOTPNG / DESIGN</div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">WORK</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1>HI, I'M ELIJA.</h1>
+        </section>
+
+        <div class="about-content">
+          <div class="about-image">
+             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Portrait">
+          </div>
+          <div class="about-text">
+            <p>I am a Multimedia Arts graduate with a deep passion for graphic design and visual storytelling. My work explores the intersection of classic Swiss minimalism and contemporary digital culture.</p>
+            <br>
+            <p>I believe that good design is invisible—it should guide the user effortlessly while maintaining a strong, distinctive character.</p>
+            
+            <h2 style="margin-top: 3rem;">EXPERTISE</h2>
+            <ul class="skills-list">
+              <li>Visual Identity</li>
+              <li>Typography</li>
+              <li>Editorial Design</li>
+              <li>UI/UX Design</li>
+              <li>Motion Graphics</li>
+              <li>Photography</li>
+            </ul>
+
+            <h2 style="margin-top: 3rem;">CONTACT</h2>
+            <p>hello@yourname.design</p>
+            <p>Instagram / LinkedIn / Behance</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 EJAYDOTPNG. ALL RIGHTS RESERVED.</p>
+        <p>AVAILABLE FOR FREELANCE / HIRED</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>
